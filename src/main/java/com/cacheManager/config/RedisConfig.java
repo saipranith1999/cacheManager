@@ -5,23 +5,14 @@ import io.lettuce.core.RedisConnectionException;
 import io.lettuce.core.RedisURI;
 import io.lettuce.core.api.StatefulRedisConnection;
 import io.lettuce.core.api.sync.RedisCommands;
-import io.lettuce.core.protocol.RedisCommand;
 import io.micronaut.context.annotation.Bean;
 import io.micronaut.context.annotation.Factory;
 import io.micronaut.context.annotation.Value;
-import io.micronaut.core.annotation.NonNull;
-import io.micronaut.core.annotation.Nullable;
-import io.micronaut.core.type.Argument;
-import io.micronaut.json.JsonStreamConfig;
-import io.micronaut.json.tree.JsonNode;
+
 import io.micronaut.serde.ObjectMapper;
 import jakarta.inject.Singleton;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 
-import static io.micronaut.runtime.Micronaut.build;
 
 @Factory
 public class RedisConfig {
